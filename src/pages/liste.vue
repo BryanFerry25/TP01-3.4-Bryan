@@ -1,0 +1,11 @@
+<template>
+    
+</template>
+
+<script setup lang="ts">
+
+
+const maisons = [{nom:"Maison", price:5000, favoris:true, txt:"Belle Maison", nbbath:3, nbsize:"500 m²", img:"/public/maison.jpg"}, {nom:"Maison 2", price:4500, favoris:false, txt:"Agréable maison", nbbath:1, nbsize:"300 m²", img:"/public/maison2.jpg"}]
+
+
+</script>

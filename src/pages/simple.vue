@@ -4,6 +4,7 @@
 
 
         <card class="w-1/2" v-bind="objet"/>
+
     </div>
     </template>
     
