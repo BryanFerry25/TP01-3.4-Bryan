@@ -37,7 +37,7 @@
   </figure>
 </template>
 
-<script >
+<script setup lang="ts">
 
 import bed from "./icones/bed.vue";
 import bath from "./icones/bath.vue";
