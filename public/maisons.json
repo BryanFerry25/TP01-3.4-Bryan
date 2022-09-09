@@ -6,5 +6,4 @@
     {"nom":"Maison 3", "price":6000, "txt":"Magnifique maison", "favoris":true, "nbbath":5, "nbsize":"700 m²", "img":"/public/maison3.jpg"},
 
     {"nom":"Maison 4", "price":2000, "txt":"Basique maison", "nbbath":2, "nbsize":"100 m²", "img":"/public/maison4.jpg"}
-
 ]
