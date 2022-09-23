@@ -40,6 +40,16 @@
         </router-link>
         </li>
 
+
+        
+      <li>
+
+<router-link class="text-red-600 underline" to="/liste-supabase">
+    <h2>lien vers la page Supabase</h2> 
+    
+  </router-link>
+  </li>
+
         <li>
 
 <router-link class="text-red-600 underline" to="/offre/">

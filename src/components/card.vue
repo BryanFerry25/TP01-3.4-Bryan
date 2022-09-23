@@ -1,6 +1,6 @@
 <template>
   <figure class="m-4">
-    <img class="w-full rounded-t-lg" v-bind:src="img" alt="" />
+    <img class="w-full rounded-t-lg" v-bind:src="image" alt="" />
     <figcaption
       class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7"
     >
@@ -8,15 +8,15 @@
       <address class="not-italic text-gray-500">{{ txt }}</address>
       <div class="order-first flex items-center">
         <div class="text-2xl text-indigo-500">
-          ${{ price.toLocaleString("en-US") }}
+          ${{ prix.toLocaleString("en-US") }}
         </div>
         <div class="text-gray-500">/mois</div>
       </div>
       <hr class="my-2 border-t-2 border-indigo-100" />
       <div class="flex justify-between text-sm">
-        <div><bed class="inline-block align-top" /> {{ nbbed }}</div>
-        <div><bath class="inline-block align-top" /> {{ nbbath }}</div>
-        <div><size class="inline-block align-top" /> {{ nbsize }}</div>
+        <div><bed class="inline-block align-top" /> {{ nbrChambres}}</div>
+        <div><bath class="inline-block align-top" /> {{ nbrSDB }}</div>
+        <div><size class="inline-block align-top" /> {{ surface }}</div>
       </div>
       <div
         class="
@@ -44,7 +44,7 @@ import bath from "./icones/bath.vue";
 import size from "./icones/size.vue";
 import heart from "./icones/hearth.vue";
 defineProps ({
-    price: {
+    prix: {
       type: Number,
       default: 2700,
     },
@@ -60,18 +60,18 @@ defineProps ({
       type: String,
       default: "2821 Lake Sevilla, Palm Harbor, TX",
     },
-    img: {
+    image: {
       type: String,
     },
-    nbbath: {
+    nbrSDB: {
       type: String,
       default: "2 Bathrooms",
     },
-    nbsize: {
+    surface: {
       type: String,
       default: "6x7.5 m²",
     },
-    nbbed: {
+    nbrChambres: {
       type: String,
       default: "1 lit",
     }
