@@ -50,6 +50,16 @@
   </router-link>
   </li>
 
+
+
+  <li>
+
+<router-link class="text-red-600 underline" to="/authentif">
+    <h2>lien vers la page Authentification</h2> 
+    
+  </router-link>
+  </li>
+
         <li>
 
 <router-link class="text-red-600 underline" to="/offre/">
