@@ -9,6 +9,16 @@
     const maison = ref({nom:"Nom de la maison", prix:50000, favori:false, adresse:"adrresse maison",nbrChambres:2, nbrSDB:4,  surface:"200 m²", image:"/public/maison.jpg"});
     import { useRouter } from "vue-router";
 const router = useRouter();
+const props = defineProps(["id"]);
+if (props.id) {
+    // On charge les données de la maison
+    let { data, error } = await supabase
+        .from("Maison")
+        .select("*")
+        .eq("id", props.id);
+    if (error) console.log("n'a pas pu charger le table Maison :", error);
+    else maison.value = (data as any[])[0];
+}
 async function upsertMaison(dataForm, node) {
 
 const { data, error } = await supabase.from("Maison").upsert(dataForm);
