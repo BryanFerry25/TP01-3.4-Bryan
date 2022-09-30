@@ -31,7 +31,7 @@
           border-2 border-indigo-100
         "
       >
-        <heart :class="{ 'fill-red-400': favoris }" />
+        <heart :class="{ 'fill-red-400': favori }" />
       </div>
     </figcaption>
   </figure>
@@ -48,7 +48,7 @@ defineProps ({
       type: Number,
       default: 2700,
     },
-    favoris: {
+    favori: {
       type: Boolean,
       default: false,
     },
