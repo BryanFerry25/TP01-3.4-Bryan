@@ -70,6 +70,13 @@
     
   </router-link>
   </li>
+        <li class=" mb-10">
+
+<router-link class=" text-white bg-blue-500 p-3 rounded-2xl hover:bg-blue-400 mb-4 " to="/quartier">
+    lien vers la page quartier
+    
+  </router-link>
+  </li>
 
     </ul>
   </nav>
